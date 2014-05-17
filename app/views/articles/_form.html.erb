@@ -1,0 +1,9 @@
+<%= simple_form_for @article, :url => articles_path, :method => 'POST' do |f| %>
+
+    <%= f.input :title %>
+    <%= f.input :text, :input_html =>{ :style => 'width: 580px'} %>
+
+    <%= f.submit 'create', :class => 'button' %>
+
+
+<% end %>

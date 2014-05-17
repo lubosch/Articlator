@@ -1,0 +1,9 @@
+<%= simple_form_for @comment, :url => article_comments_path(@article.id), :method => 'POST', :remote => true do |f| %>
+    <h2>Add comment</h2>
+
+    <%= f.input :text %>
+    <%= f.submit 'Add comment', :class => 'button' %>
+
+
+
+<% end %>

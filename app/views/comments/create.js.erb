@@ -1,0 +1,5 @@
+c = "<div class='comment'><h3 class='time_ago'><%= @comment.created_at %> </h3><em><%= @comment.text %></em></div>"
+
+
+$('#comments').prepend(c);
+document.getElementById('comments').scrollIntoView(true);

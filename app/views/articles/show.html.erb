@@ -1,0 +1,19 @@
+<div id="page" class="container" xmlns="http://www.w3.org/1999/html">
+  <div id="content2">
+    <div class="title centered">
+      <h1><%= @article.title %></h1>
+    </div>
+
+    <ul class="style2">
+      <%= simple_format @article.text %>
+    </ul>
+
+    <h2>Comments</h2>
+
+    <div id="comments">
+      <%= render :partial => "comments/comment", :collection => @comments %>
+    </div>
+    <%= render 'comments/form' %>
+
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<h3> <%= link_to article_list.title, article_path(article_list.id) %>  </h3>
+<ul class="style2">
+  <%= truncate article_list.text, :length => 50, :omission => '... (continued)'%>
+</ul>

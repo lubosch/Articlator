@@ -1,0 +1,12 @@
+<div id="page" class="container" xmlns="http://www.w3.org/1999/html">
+  <div id="content2">
+    <div class="title centered">
+      <h1>List of all articles</h1>
+      <%= link_to 'Add article', new_article_path, :class => "icon icon-arrow-right button" %>
+
+    </div>
+
+    <%= render :partial => "article_list", :collection => @articles %>
+
+  </div>
+</div>
